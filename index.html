@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afuté — Livre Blanc Envol Pro 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,600;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="logo-dot"></span>
+    <strong>Afuté</strong>
+    <span class="nav-sub">Envol Pro</span>
+  </div>
+  <div class="nav-links">
+    <a href="#methode" class="nav-link">La Méthode</a>
+    <a href="#parties-prenantes" class="nav-link">Parties Prenantes</a>
+    <a href="#outils" class="nav-link">Les Outils</a>
+    <a href="#conditions" class="nav-link">Conditions de Réussite</a>
+  </div>
+  <a href="#methode" class="nav-cta">Explorer →</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Livre Blanc · 2026</div>
+    <h1>Comprendre<br /><span class="hero-accent">Envol Pro</span></h1>
+    <p class="hero-sub">Le dispositif Afuté pour l'inclusion durable en milieu ordinaire — 420h de formation, 100% en entreprise.</p>
+    <div class="hero-stats">
+      <div class="stat-pill"><strong>420h</strong> de formation</div>
+      <div class="stat-pill"><strong>100%</strong> en entreprise</div>
+      <div class="stat-pill"><strong>45%</strong> de sorties positives</div>
+      <div class="stat-pill"><strong>12–20h</strong> par semaine</div>
+    </div>
+    <div class="hero-ctas">
+      <button class="btn-primary" onclick="scrollTo('methode')">Comprendre la méthode</button>
+      <button class="btn-ghost" onclick="scrollTo('parties-prenantes')">Les parties prenantes</button>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="process-mini">
+      <div class="pm-side pm-candidat">
+        <div class="pm-label">Côté Candidat</div>
+        <div class="pm-step" data-step="1a">Préqualification</div>
+        <div class="pm-step" data-step="2a">Profilage</div>
+        <div class="pm-step" data-step="3a">Orientation</div>
+      </div>
+      <div class="pm-center">
+        <div class="pm-joint" data-step="4">Matching</div>
+        <div class="pm-joint" data-step="5">Formation</div>
+        <div class="pm-joint pm-emploi" data-step="6">Emploi 🎯</div>
+      </div>
+      <div class="pm-side pm-entreprise">
+        <div class="pm-label">Côté Entreprise</div>
+        <div class="pm-step" data-step="1b">Contact</div>
+        <div class="pm-step" data-step="2b">Diagnostic</div>
+        <div class="pm-step" data-step="3b">Opportunité</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHODE OVERVIEW -->
+<section id="methode" class="section">
+  <div class="section-header">
+    <span class="section-tag">La Méthode</span>
+    <h2>9 étapes en parallèle</h2>
+    <p>Deux parcours menés simultanément — côté candidat et côté entreprise — qui convergent au moment du matching.</p>
+  </div>
+
+  <div class="process-wrapper">
+    <!-- PARALLEL TRACKS -->
+    <div class="tracks-container">
+      <!-- CANDIDAT TRACK -->
+      <div class="track track-candidat">
+        <div class="track-header">
+          <div class="track-dot track-dot-candidat"></div>
+          <h3>Côté Candidat</h3>
+        </div>
+        <div class="track-steps">
+          <div class="track-step" onclick="openStepModal('1a')">
+            <div class="step-num">1a</div>
+            <div class="step-body">
+              <h4>Préqualification</h4>
+              <p>Vérifier le projet et la motivation du jeune</p>
+            </div>
+            <span class="step-arrow">→</span>
+          </div>
+          <div class="track-step" onclick="openStepModal('2a')">
+            <div class="step-num">2a</div>
+            <div class="step-body">
+              <h4>Profilage</h4>
+              <p>Évaluer les aptitudes sur 26 axes</p>
+            </div>
+            <span class="step-arrow">→</span>
+          </div>
+          <div class="track-step" onclick="openStepModal('3a')">
+            <div class="step-num">3a</div>
+            <div class="step-body">
+              <h4>Orientation</h4>
+              <p>Intégration au vivier de candidats</p>
+            </div>
+            <span class="step-arrow">→</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONVERGENCE -->
+      <div class="track-convergence">
+        <div class="convergence-arrow candidat-arrow"></div>
+        <div class="convergence-center">
+          <div class="conv-step active-step" onclick="openStepModal('4')">
+            <div class="conv-num">4</div>
+            <strong>Matching</strong>
+            <small>Croisement des deux référentiels</small>
+          </div>
+          <div class="conv-step" onclick="openStepModal('5')">
+            <div class="conv-num">5</div>
+            <strong>Formation</strong>
+            <small>420h en entreprise</small>
+          </div>
+          <div class="conv-step conv-emploi" onclick="openStepModal('6')">
+            <div class="conv-num">6</div>
+            <strong>Emploi</strong>
+            <small>CDI, CDD &gt; 6 mois ou alternance</small>
+          </div>
+        </div>
+        <div class="convergence-arrow entreprise-arrow"></div>
+      </div>
+
+      <!-- ENTREPRISE TRACK -->
+      <div class="track track-entreprise">
+        <div class="track-header">
+          <div class="track-dot track-dot-entreprise"></div>
+          <h3>Côté Entreprise</h3>
+        </div>
+        <div class="track-steps">
+          <div class="track-step" onclick="openStepModal('1b')">
+            <div class="step-num step-num-b">1b</div>
+            <div class="step-body">
+              <h4>Contact</h4>
+              <p>Prospection et visite de site</p>
+            </div>
+            <span class="step-arrow">→</span>
+          </div>
+          <div class="track-step" onclick="openStepModal('2b')">
+            <div class="step-num step-num-b">2b</div>
+            <div class="step-body">
+              <h4>Diagnostic</h4>
+              <p>Découpe du poste en tâches élémentaires</p>
+            </div>
+            <span class="step-arrow">→</span>
+          </div>
+          <div class="track-step" onclick="openStepModal('3b')">
+            <div class="step-num step-num-b">3b</div>
+            <div class="step-body">
+              <h4>Opportunité</h4>
+              <p>Validation du poste et budget d'embauche</p>
+            </div>
+            <span class="step-arrow">→</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="process-note">👆 Cliquez sur chaque étape pour voir le déroulé détaillé et les parties prenantes</p>
+  </div>
+
+  <!-- KEY INSIGHT -->
+  <div class="insight-box">
+    <div class="insight-icon">💡</div>
+    <div class="insight-text">
+      <strong>La méthode crée les conditions du matching.</strong> Mais l'emploi durable dépend de facteurs qui dépassent la formation : l'engagement de la famille, la flexibilité de l'entreprise, la qualité d'accompagnement. Afuté coordonne — mais ne peut pas réussir seul.
+    </div>
+  </div>
+</section>
+
+<!-- PARTIES PRENANTES -->
+<section id="parties-prenantes" class="section section-dark">
+  <div class="section-header">
+    <span class="section-tag section-tag-light">Parties Prenantes</span>
+    <h2>L'inclusion se construit collectivement</h2>
+    <p>Chaque acteur a un rôle précis. Cliquez pour découvrir les conditions de réussite de chacun.</p>
+  </div>
+
+  <div class="stakeholders-grid">
+    <div class="stakeholder-card" onclick="openStakeholderModal('apprenant')">
+      <div class="sh-icon">🧑</div>
+      <h3>L'Apprenant</h3>
+      <p>Engagement, motivation et acquisition des savoir-faire et savoir-être</p>
+      <div class="sh-tags">
+        <span>Engagement</span><span>Savoir-faire</span><span>Savoir-être</span><span>Aptitudes</span>
+      </div>
+      <button class="sh-btn">Voir le rôle →</button>
+    </div>
+
+    <div class="stakeholder-card" onclick="openStakeholderModal('famille')">
+      <div class="sh-icon">👨‍👩‍👦</div>
+      <h3>La Famille</h3>
+      <p>Soutien quotidien, transport, stabilité du cadre de vie</p>
+      <div class="sh-tags">
+        <span>Soutien</span><span>Transport</span><span>Stabilité</span>
+      </div>
+      <button class="sh-btn">Voir le rôle →</button>
+    </div>
+
+    <div class="stakeholder-card" onclick="openStakeholderModal('structure')">
+      <div class="sh-icon">🏥</div>
+      <h3>Structure MS</h3>
+      <p>Accompagnement médico-social compatible avec l'emploi</p>
+      <div class="sh-tags">
+        <span>Guidance</span><span>Compatibilité</span><span>Habiletés sociales</span>
+      </div>
+      <button class="sh-btn">Voir le rôle →</button>
+    </div>
+
+    <div class="stakeholder-card" onclick="openStakeholderModal('entreprise')">
+      <div class="sh-icon">🏢</div>
+      <h3>L'Entreprise</h3>
+      <p>Poste adapté, tuteur engagé, environnement stable</p>
+      <div class="sh-tags">
+        <span>Poste adapté</span><span>Tuteur</span><span>Stabilité</span>
+      </div>
+      <button class="sh-btn">Voir le rôle →</button>
+    </div>
+
+    <div class="stakeholder-card stakeholder-afute" onclick="openStakeholderModal('afute')">
+      <div class="sh-icon">⚡</div>
+      <h3>Afuté</h3>
+      <p>Coordination de l'ensemble du parcours, outils et suivi 360°</p>
+      <div class="sh-tags">
+        <span>Coordination</span><span>Outils</span><span>Suivi 360°</span><span>Matching</span>
+      </div>
+      <button class="sh-btn">Voir le rôle →</button>
+    </div>
+  </div>
+
+  <!-- WHEEL OF INCLUSION -->
+  <div class="inclusion-wheel-section">
+    <h3>Les 11 conditions systémiques de réussite</h3>
+    <div class="conditions-grid">
+      <div class="condition-item"><span class="cond-num">1</span>Engagement et motivation</div>
+      <div class="condition-item"><span class="cond-num">2</span>Savoir-faire techniques</div>
+      <div class="condition-item"><span class="cond-num">3</span>Savoir-être professionnels</div>
+      <div class="condition-item"><span class="cond-num">4</span>Aptitudes fonctionnelles</div>
+      <div class="condition-item"><span class="cond-num">5</span>Projet professionnel adapté</div>
+      <div class="condition-item"><span class="cond-num">6</span>Accessibilité / Transports</div>
+      <div class="condition-item"><span class="cond-num">7</span>Conditions de vie et rémunération</div>
+      <div class="condition-item"><span class="cond-num">8</span>Accompagnement dans l'emploi</div>
+      <div class="condition-item"><span class="cond-num">9</span>Partenariat avec l'entreprise</div>
+      <div class="condition-item"><span class="cond-num">10</span>Poste adapté et budgété</div>
+      <div class="condition-item"><span class="cond-num">11</span>Compatibilité emploi / suivi MS</div>
+    </div>
+    <p class="wheel-quote">« La réussite de l'inclusion est le résultat de la contribution de chacun. »</p>
+  </div>
+</section>
+
+<!-- OUTILS -->
+<section id="outils" class="section">
+  <div class="section-header">
+    <span class="section-tag">Les Outils</span>
+    <h2>15 outils pour concrétiser chaque étape</h2>
+    <p>Des questionnaires d'aptitude aux évaluations en ligne, chaque outil couvre une fonction précise du parcours.</p>
+  </div>
+
+  <div class="tools-tabs">
+    <button class="tool-tab active" onclick="showToolCategory('pilotage')">🧭 Piloter le parcours</button>
+    <button class="tool-tab" onclick="showToolCategory('connaissance')">🔍 Connaître candidat & poste</button>
+    <button class="tool-tab" onclick="showToolCategory('pedagogique')">📚 Suivi pédagogique</button>
+    <button class="tool-tab" onclick="showToolCategory('evaluation')">📊 Évaluation & traçabilité</button>
+  </div>
+
+  <div class="tools-content">
+    <div id="tools-pilotage" class="tool-panel active">
+      <div class="tools-list">
+        <div class="tool-item">
+          <div class="tool-icon">📋</div>
+          <div class="tool-info">
+            <h4>Tableau de suivi des conditions de succès</h4>
+            <p>Outil de gestion du risque à 360°, mis à jour à chaque jalon, couvrant les 4 parties prenantes</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">💻</div>
+          <div class="tool-info">
+            <h4>Plateforme de suivi / gestion dématérialisée</h4>
+            <p>Agrège émargements, évaluations et suivi en temps réel pour la Cheffe de Projet Inclusion</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tools-connaissance" class="tool-panel">
+      <div class="tools-list">
+        <div class="tool-item">
+          <div class="tool-icon">📝</div>
+          <div class="tool-info">
+            <h4>Questionnaire administratif & d'aptitude</h4>
+            <p>Évalue le profil fonctionnel et administratif du candidat</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">🎯</div>
+          <div class="tool-info">
+            <h4>Mises en situation</h4>
+            <p>Valide les capacités pratiques en conditions réelles</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">🔬</div>
+          <div class="tool-info">
+            <h4>Diagnostique des Tâches élémentaires</h4>
+            <p>Décompose le poste en unités accessibles à un profil neuro-atypique</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">⚖️</div>
+          <div class="tool-info">
+            <h4>Nouveau référentiel d'aptitudes et de tâches</h4>
+            <p>Confronte profil candidat et diagnostic poste pour valider l'affectation sur 26 axes</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">📊</div>
+          <div class="tool-info">
+            <h4>Synthèse d'Évaluation et Aptitudes</h4>
+            <p>Compile les résultats, base de la décision d'orientation</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tools-pedagogique" class="tool-panel">
+      <div class="tools-list">
+        <div class="tool-item">
+          <div class="tool-icon">🗂️</div>
+          <div class="tool-info">
+            <h4>Fiches FUTE</h4>
+            <p>Supports tâche par tâche, conçus pour les profils neuro-atypiques, utilisés au quotidien</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">🏭</div>
+          <div class="tool-info">
+            <h4>Livret Formateur Entreprise</h4>
+            <p>Cadre le rôle et les responsabilités du formateur salarié</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">📖</div>
+          <div class="tool-info">
+            <h4>Livret Formateur Afuté</h4>
+            <p>Guide la supervision du binôme par le formateur Afuté</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">🗓️</div>
+          <div class="tool-info">
+            <h4>Séquencement pédagogique</h4>
+            <p>Planifie la progression en 2 modules : accompagnement rapproché → autonomie</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tools-evaluation" class="tool-panel">
+      <div class="tools-list">
+        <div class="tool-item">
+          <div class="tool-icon">✅</div>
+          <div class="tool-info">
+            <h4>Émargement en ligne</h4>
+            <p>Traçabilité complète des présences</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">📈</div>
+          <div class="tool-info">
+            <h4>Évaluations en ligne</h4>
+            <p>Mesure la progression, permet d'ajuster le parcours en temps réel</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">⏱️</div>
+          <div class="tool-info">
+            <h4>Bilan mi-parcours</h4>
+            <p>Point de contrôle intermédiaire sur les conditions encore ouvertes</p>
+          </div>
+        </div>
+        <div class="tool-item">
+          <div class="tool-icon">🏁</div>
+          <div class="tool-info">
+            <h4>Bilan fin de parcours</h4>
+            <p>Évaluation finale, base de la recommandation à l'embauche</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS DE RÉUSSITE -->
+<section id="conditions" class="section section-light">
+  <div class="section-header">
+    <span class="section-tag">Conditions de Réussite</span>
+    <h2>Ce que chaque acteur doit apporter</h2>
+    <p>Sélectionnez une partie prenante pour voir ses contributions spécifiques.</p>
+  </div>
+
+  <div class="conditions-tabs">
+    <button class="cond-tab active" onclick="showConditions('apprenant2')">🧑 Apprenant</button>
+    <button class="cond-tab" onclick="showConditions('famille2')">👨‍👩‍👦 Famille</button>
+    <button class="cond-tab" onclick="showConditions('structure2')">🏥 Structure MS</button>
+    <button class="cond-tab" onclick="showConditions('entreprise2')">🏢 Entreprise</button>
+    <button class="cond-tab" onclick="showConditions('afute2')">⚡ Afuté</button>
+  </div>
+
+  <div id="cond-apprenant2" class="conditions-panel active">
+    <div class="conds-list">
+      <div class="cond-card"><span class="cond-n">1</span><div><strong>Engagement et motivation</strong><p>Être présent, ponctuel, faire les efforts demandés</p></div></div>
+      <div class="cond-card"><span class="cond-n">2</span><div><strong>Savoir-faire</strong><p>Progresser sur les tâches, s'appuyer sur les fiches FUTE</p></div></div>
+      <div class="cond-card"><span class="cond-n">3</span><div><strong>Savoir-être</strong><p>Intégrer progressivement les codes du milieu professionnel</p></div></div>
+      <div class="cond-card"><span class="cond-n">4</span><div><strong>Aptitudes</strong><p>Mobiliser ses capacités dans le contexte du poste</p></div></div>
+    </div>
+  </div>
+
+  <div id="cond-famille2" class="conditions-panel">
+    <div class="conds-list">
+      <div class="cond-card"><span class="cond-n">1</span><div><strong>Engagement</strong><p>Soutenir la motivation au quotidien, valoriser les progrès</p></div></div>
+      <div class="cond-card"><span class="cond-n">2</span><div><strong>Savoir-être</strong><p>Accompagner les habitudes : ponctualité, tenue, gestion des émotions</p></div></div>
+      <div class="cond-card"><span class="cond-n">3</span><div><strong>Transports</strong><p>Travailler l'autonomie, accompagner l'apprentissage du trajet</p></div></div>
+      <div class="cond-card"><span class="cond-n">4</span><div><strong>Conditions de vie</strong><p>Assurer la stabilité du cadre de vie, anticiper l'impact financier</p></div></div>
+    </div>
+  </div>
+
+  <div id="cond-structure2" class="conditions-panel">
+    <div class="conds-list">
+      <div class="cond-card"><span class="cond-n">1</span><div><strong>Engagement</strong><p>Aider le jeune à comprendre le travail en milieu ordinaire</p></div></div>
+      <div class="cond-card"><span class="cond-n">2</span><div><strong>Savoir-être</strong><p>Guidance comportementale et ateliers habiletés sociales</p></div></div>
+      <div class="cond-card"><span class="cond-n">3</span><div><strong>Transports</strong><p>Mettre en place un protocole d'entraînement spécifique si nécessaire</p></div></div>
+      <div class="cond-card"><span class="cond-n">4</span><div><strong>Compatibilité emploi / suivi</strong><p>Organiser un accompagnement compatible avec le temps partiel</p></div></div>
+    </div>
+  </div>
+
+  <div id="cond-entreprise2" class="conditions-panel">
+    <div class="conds-list">
+      <div class="cond-card"><span class="cond-n">1</span><div><strong>Poste adapté et budgété</strong><p>Identifier un poste réel, confirmer l'engagement budgétaire</p></div></div>
+      <div class="cond-card"><span class="cond-n">2</span><div><strong>Savoir-faire</strong><p>Le Formateur Entreprise transmet les gestes par démonstration et répétition</p></div></div>
+      <div class="cond-card"><span class="cond-n">3</span><div><strong>Validation des compétences</strong><p>Évaluer au quotidien, compléter les évaluations synthétiques</p></div></div>
+      <div class="cond-card"><span class="cond-n">4</span><div><strong>Stabilité de l'environnement</strong><p>Garantir la stabilité du personnel et de l'organisation sur plus d'un an</p></div></div>
+    </div>
+  </div>
+
+  <div id="cond-afute2" class="conditions-panel">
+    <div class="conds-list">
+      <div class="cond-card"><span class="cond-n">1</span><div><strong>Coordination</strong><p>Coordonne l'ensemble des parties prenantes tout au long du parcours</p></div></div>
+      <div class="cond-card"><span class="cond-n">2</span><div><strong>Faisabilité du matching</strong><p>Vérifie en amont : transport, rémunération, compatibilité</p></div></div>
+      <div class="cond-card"><span class="cond-n">3</span><div><strong>Outils pédagogiques</strong><p>Fiches FUTE, référentiel 26 axes, livret formateur</p></div></div>
+      <div class="cond-card"><span class="cond-n">4</span><div><strong>Suivi renforcé</strong><p>Maintient le suivi d'inclusion au-delà du suivi pédagogique</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <span class="logo-dot"></span>
+      <strong>Afuté</strong>
+      <span>Envol Pro · Livre Blanc 2026</span>
+    </div>
+    <p class="footer-tagline">L'inclusion durable en milieu ordinaire pour les personnes en situation de handicap.</p>
+  </div>
+</footer>
+
+<!-- MODALS -->
+<div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+  <div class="modal" id="modal-content" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
